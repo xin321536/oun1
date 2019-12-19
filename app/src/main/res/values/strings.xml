@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">oun1</string>
+    <string name="nav_menu_star">透明</string>
+    <string name="nav_menu_news">显示</string>
+    <string name="nav_menu_title_common">通用</string>
+    <string name="nav_menu_share">第一级</string>
+    <string name="nav_menu_set">第二级</string>
+    <string name="nav_menu_title_other">非通用</string>
+    <string name="nav_menu_send">非通用1</string>
+    <string name="ok">打开</string>
+    <string name="no">关闭</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

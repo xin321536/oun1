@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--
+            一大堆子属性
+            app:tabIndicatorColor    指示器颜色
+            app:tabTextColor         tab栏字体颜色
+            app:tabSelectedTextColor tab栏字体被选颜色
+            app:tabIndicatorHeight   指示器高度
+            app:tabBackground        tab背景颜色
+            app:tabMaxWidth          tab栏最大宽度
+            app:tabTextAppearance    tab栏字体样式
+            app:tabMinWidth          tab栏最小宽度
+            ......
+        -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/mvp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:background="#7B50C9"
+            app:tabSelectedTextColor="#FF0000"
+            app:tabTextColor="#41B942"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/drawer_nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/drawer_layout"
+        app:menu="@menu/drawer_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
